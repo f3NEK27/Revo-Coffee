@@ -4,174 +4,256 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revo Coffee</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="./assets/icons/LOGO.png" alt="#" />
-      <h1>YOUR PERSONALIZED COFFEE</h1>
-      <img src="./assets/icons/shopping-cart-3.png" alt="" />
-      <img src="./assets/img/banner.png" alt="#" />
-      <nav>
-        <ul>
-          <li><a href="#">Combo</a></li>
-          <li><a href="#">Coffee</a></li>
-          <li><a href="#">Phin Ma</a></li>
-          <li><a href="#">Trang</a></li>
-          <li><a href="#">Giftset</a></li>
-          <li><a href="#">Lien</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container">
+        <img class="header__logo" src="./assets/icons/LOGO.png" alt="#" />
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Combo</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Coffee</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Phin Ma</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Trang</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Giftset</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Lien</a></li>
+          </ul>
+        </nav>
+
+        <img
+          class="header__cart"
+          src="./assets/icons/shopping-cart-3.png"
+          alt=""
+        />
+      </div>
+
+      <div class="header__hero">
+        <h1 class="header__title">YOUR PERSONALIZED COFFEE</h1>
+        <img class="header__banner" src="./assets/img/banner.png" alt="#" />
+      </div>
     </header>
-    <main>
-      <section>
-        <p>Your Personalized Coffee</p>
-        <h2>COFFEE BUILD YOUR BASE</h2>
-        <div>
-          <img src="./assets/icons/ic.png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <p>
-            Failure doesn&rsquo;t mean you are a&nbsp;failure it&nbsp;just means
-            you haven&rsquo;t succeeded yet.
-          </p>
-        </div>
-        <div>
-          <img src="./assets/icons/IC(1).png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <p>
-            He&nbsp;had a&nbsp;wall full of&nbsp;masks so&nbsp;she could wear
-            a&nbsp;different face every day.
-          </p>
-        </div>
-        <div>
-          <img src="./assets/icons/IC(2).png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <p>
-            To&nbsp;ensure good health: eat lightly, breathe deeply, live
-            moderately, cultivate cheerfulness, and maintain an&nbsp;interest
-            in&nbsp;life.
-          </p>
-        </div>
-        <div>
-          <img src="./assets/icons/IC(3).png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <p>
-            We&nbsp;cannot hold a&nbsp;torch to&nbsp;light another&rsquo;s path
-            without brightening our own.
-          </p>
-        </div>
-      </section>
-      <section>
-        <p>Choose Your Favorite</p>
-        <h2>Take your coffee</h2>
-        <div>
-          <div>
-            <img src="./assets/img/IMAGE.png" alt="" />
-            <span>99.000</span>
-            <h3>REVO Morning</h3>
-            <p>
-              All the great performers I&nbsp;have worked with are fuelled
-              by&nbsp;a&nbsp;personal dream.
+
+    <main class="main">
+      <section class="features">
+        <p class="features__subtitle">Your Personalized Coffee</p>
+        <h2 class="features__title">COFFEE BUILD YOUR BASE</h2>
+
+        <div class="features__list">
+          <div class="feature">
+            <img class="feature__icon" src="./assets/icons/ic.png" alt="" />
+            <h3 class="feature__title">Lorem ipsum</h3>
+            <p class="feature__text">
+              Failure doesn’t mean you are a failure it just means you haven’t
+              succeeded yet.
             </p>
-            <button type="button">MUA NGAY</button>
-            <button type="button">Chi Tiet</button>
           </div>
-          <div>
-            <img src="./assets/img/image(1).png" alt="" />
-            <span>139.000</span>
-            <h3>REVO Origin</h3>
-            <p>
-              We&nbsp;cannot hold a&nbsp;torch to&nbsp;light another&rsquo;s
-              path without brightening our own.
+
+          <div class="feature">
+            <img class="feature__icon" src="./assets/icons/IC(1).png" alt="" />
+            <h3 class="feature__title">Lorem ipsum</h3>
+            <p class="feature__text">
+              He had a wall full of masks so she could wear a different face
+              every day.
             </p>
-            <button type="button">MUA NGAY</button>
-            <button type="button">Chi Tiet</button>
           </div>
-          <div>
-            <img src="./assets/img/IMAGE(2).png" alt="" />
-            <span>85.000</span>
-            <h3>REVO Everyday</h3>
-            <p>The time you think you&rsquo;re missing, misses you too.</p>
-            <button type="button">MUA NGAY</button>
-            <button type="button">Chi Tiet</button>
-          </div>
-          <div>
-            <img src="./assets/img/IMAGE(3).png" alt="" />
-            <span>75.000</span>
-            <h3>REVO Dam Da</h3>
-            <p>
-              To&nbsp;follow, without halt, one aim: There is&nbsp;the secret
-              of&nbsp;success.
+
+          <div class="feature">
+            <img class="feature__icon" src="./assets/icons/IC(2).png" alt="" />
+            <h3 class="feature__title">Lorem ipsum</h3>
+            <p class="feature__text">
+              To ensure good health: eat lightly, breathe deeply, live
+              moderately, cultivate cheerfulness, and maintain an interest in
+              life.
             </p>
-            <button type="button">MUA NGAY</button>
-            <button type="button">Chi Tiet</button>
+          </div>
+
+          <div class="feature">
+            <img class="feature__icon" src="./assets/icons/IC(3).png" alt="" />
+            <h3 class="feature__title">Lorem ipsum</h3>
+            <p class="feature__text">
+              We cannot hold a torch to light another’s path without brightening
+              our own.
+            </p>
           </div>
         </div>
       </section>
-      <section>
-        <img src="./assets/img/pr-0018-r.png" alt="" />
-        <span>285.000</span>
-        <h3>Giftset "Ca phe pin Viet Nam"</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur
-          adipiscing elit quisque faucibus ex&nbsp;sapien vitae. Ex&nbsp;sapien
-          vitae pellentesque sem placerat in&nbsp;id. Placerat
-          in&nbsp;id&nbsp;cursus mi&nbsp;pretium tellus duis. Pretium tellus
-          duis convallis tempus leo eu&nbsp;aenean.
-        </p>
-        <div>
-          <img src="./assets/icons/IC_coffee.png" alt="" />
-          <span>Loai hat</span>
-          <h4>Fine Robusta Blend</h4>
-        </div>
-        <div>
-          <img src="./assets/icons/IC_Mountain.png" alt="" />
-          <span>Do Cao</span>
-          <h4>700-800m</h4>
-          <button type="button">MUA NGAY</button>
-          <button type="button">Chi Tiet</button>
+
+      <section class="products">
+        <p class="products__subtitle">Choose Your Favorite</p>
+        <h2 class="products__title">Take your coffee</h2>
+
+        <div class="products__list">
+          <div class="product-card">
+            <img
+              class="product-card__image"
+              src="./assets/img/IMAGE.png"
+              alt=""
+            />
+            <span class="product-card__price">99.000</span>
+            <h3 class="product-card__title">REVO Morning</h3>
+            <p class="product-card__text">
+              All the great performers I have worked with are fuelled by a
+              personal dream.
+            </p>
+            <div class="product-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__image"
+              src="./assets/img/image(1).png"
+              alt=""
+            />
+            <span class="product-card__price">139.000</span>
+            <h3 class="product-card__title">REVO Origin</h3>
+            <p class="product-card__text">
+              We cannot hold a torch to light another’s path without brightening
+              our own.
+            </p>
+            <div class="product-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__image"
+              src="./assets/img/IMAGE(2).png"
+              alt=""
+            />
+            <span class="product-card__price">85.000</span>
+            <h3 class="product-card__title">REVO Everyday</h3>
+            <p class="product-card__text">
+              The time you think you’re missing, misses you too.
+            </p>
+            <div class="product-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__image"
+              src="./assets/img/IMAGE(3).png"
+              alt=""
+            />
+            <span class="product-card__price">75.000</span>
+            <h3 class="product-card__title">REVO Dam Da</h3>
+            <p class="product-card__text">
+              To follow, without halt, one aim: There is the secret of success.
+            </p>
+            <div class="product-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <div>
-          <img src="./assets/img/image(6).png" alt="" />
-          <span>147.000</span>
-          <span>155.000</span>
-          <h3>Combo Revo Dam Da</h3>
-          <p>
-            Don&rsquo;t turn away from possible futures before you&rsquo;re
-            certain you don&rsquo;t have anything to&nbsp;learn from them.
-          </p>
-          <button type="button">MUA NGAY</button>
-          <button type="button">Chi Tiet</button>
+
+      <section class="giftset">
+        <div class="giftset__image">
+          <img src="./assets/img/pr-0018-r.png" alt="" />
         </div>
-        <div>
-          <img src="./assets/img/image(7).png" alt="" />
-          <span>156.000</span>
-          <span>165.000</span>
-          <h3>Combo Revo Everyday</h3>
-          <p>
-            Life shrinks or&nbsp;expands in&nbsp;proportion to&nbsp;one&rsquo;s
-            courage.
+
+        <div class="giftset__content">
+          <span class="giftset__price">285.000</span>
+          <h3 class="giftset__title">Giftset "Ca phe pin Viet Nam"</h3>
+          <p class="giftset__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur
+            adipiscing elit quisque faucibus ex sapien vitae.
           </p>
-          <button type="button">MUA NGAY</button>
-          <button type="button">Chi Tiet</button>
+
+          <div class="giftset__info">
+            <div class="giftset__item">
+              <img src="./assets/icons/IC_coffee.png" alt="" />
+              <span>Loai hat</span>
+              <strong>Fine Robusta Blend</strong>
+            </div>
+
+            <div class="giftset__item">
+              <img src="./assets/icons/IC_Mountain.png" alt="" />
+              <span>Do Cao</span>
+              <strong>700-800m</strong>
+            </div>
+          </div>
+
+          <div class="giftset__buttons">
+            <button class="button button--primary">MUA NGAY</button>
+            <button class="button button--outline">Chi Tiet</button>
+          </div>
         </div>
-        <div>
-          <img src="./assets/img/image(8).png" alt="" />
-          <span>275.000</span>
-          <span>260.000</span>
-          <h3>Combo Revo Honey</h3>
-          <p>
-            The greatest mistake you can make in&nbsp;life
-            is&nbsp;to&nbsp;be&nbsp;continually fearing you will make one.
-          </p>
-          <button type="button">MUA NGAY</button>
-          <button type="button">Chi Tiet</button>
+      </section>
+
+      <section class="combo">
+        <div class="combo__list">
+          <div class="combo-card">
+            <img
+              class="combo-card__image"
+              src="./assets/img/image(6).png"
+              alt=""
+            />
+            <span class="combo-card__price">147.000</span>
+            <span class="combo-card__old-price">155.000</span>
+            <h3 class="combo-card__title">Combo Revo Dam Da</h3>
+            <p class="combo-card__text">
+              Don’t turn away from possible futures before you’re certain you
+              don’t have anything to learn from them.
+            </p>
+            <div class="combo-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <img
+              class="combo-card__image"
+              src="./assets/img/image(7).png"
+              alt=""
+            />
+            <span class="combo-card__price">156.000</span>
+            <span class="combo-card__old-price">165.000</span>
+            <h3 class="combo-card__title">Combo Revo Everyday</h3>
+            <p class="combo-card__text">
+              Life shrinks or expands in proportion to one’s courage.
+            </p>
+            <div class="combo-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <img
+              class="combo-card__image"
+              src="./assets/img/image(8).png"
+              alt=""
+            />
+            <span class="combo-card__price">275.000</span>
+            <span class="combo-card__old-price">260.000</span>
+            <h3 class="combo-card__title">Combo Revo Honey</h3>
+            <p class="combo-card__text">
+              The greatest mistake you can make in life is to be continually
+              fearing you will make one.
+            </p>
+            <div class="combo-card__buttons">
+              <button class="button button--primary">MUA NGAY</button>
+              <button class="button button--outline">Chi Tiet</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <p>© Revo Coffee Viet Nam - 2018</p>
+
+    <footer class="footer">
+      <p class="footer__text">© Revo Coffee Viet Nam - 2018</p>
     </footer>
   </body>
 </html>

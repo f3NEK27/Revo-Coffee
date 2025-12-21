@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  background-color: #f5f5f5;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__cart {
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: #c7a17a;
+}
+
+.header__hero {
+  position: relative;
+}
+
+.header__title {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 420px;
+}
+
+.header__banner {
+  width: 100%;
+  display: block;
+}
+
+/* ===== FEATURES ===== */
+
+.features {
+  padding: 80px 100px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.features__title {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.feature__icon {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.feature__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature__text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== PRODUCTS ===== */
+
+.products {
+  padding: 80px 100px;
+  background-color: #f9f9f9;
+}
+
+.products__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.products__title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card__image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card__price {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #c7a17a;
+  margin-bottom: 10px;
+}
+
+.product-card__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card__text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product-card__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ===== GIFTSET ===== */
+
+.giftset {
+  padding: 80px 100px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.giftset__image img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.giftset__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.giftset__title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.giftset__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c7a17a;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.giftset__text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.giftset__info {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.giftset__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.giftset__item img {
+  width: 32px;
+}
+
+/* ===== COMBO ===== */
+
+.combo {
+  padding: 80px 100px;
+  background-color: #f9f9f9;
+}
+
+.combo__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.combo-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.combo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.combo-card__image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.combo-card__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c7a17a;
+}
+
+.combo-card__old-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.combo-card__title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.combo-card__text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.combo-card__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ===== BUTTONS ===== */
+
+.button {
+  padding: 10px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.button--primary {
+  background-color: #c7a17a;
+  color: #fff;
+  border: none;
+}
+
+.button--primary:hover {
+  background-color: #b28d66;
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 1px solid #c7a17a;
+  color: #c7a17a;
+}
+
+.button--outline:hover {
+  background-color: #c7a17a;
+  color: #fff;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: #777;
+}
+
